@@ -1,0 +1,9 @@
+create table EmployeeDetail(EmployeeID int primary key identity, FirstName varchar(50) Not null, LastName varchar(50) Not null,
+Salary bigint Not null, JoiningDate datetime Not null, Department varchar(20) Not null,Gender varchar(20) Not null);
+select * from EmployeeDetail
+
+insert into EmployeeDetail values ('Vikas','Ahlawat',600000, '2013-02-15 02:16:28','IT','Male')
+insert into EmployeeDetail values ('nikita','Jain',530000, '2014-01-09 17:31:07.793','HR','Female')
+insert into EmployeeDetail values ('Ashish','Kumar',1000000, '2014-01-09 10:05:07.793','IT','Male')
+insert into EmployeeDetail values ('Nikhil','Sharma',480000, '2014-01-09 09:00:07.793','HR','Male')
+insert into EmployeeDetail values ('anish','kadian',500000, '2014-01-09 09:31:07.793','Payroll','Male')
