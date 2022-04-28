@@ -7,3 +7,36 @@ insert into EmployeeDetail values ('nikita','Jain',530000, '2014-01-09 17:31:07.
 insert into EmployeeDetail values ('Ashish','Kumar',1000000, '2014-01-09 10:05:07.793','IT','Male')
 insert into EmployeeDetail values ('Nikhil','Sharma',480000, '2014-01-09 09:00:07.793','HR','Male')
 insert into EmployeeDetail values ('anish','kadian',500000, '2014-01-09 09:31:07.793','Payroll','Male')
+
+
+Ques 1- Get all employee detail from EmployeeDetail table whose "FirstName" not start
+with any single character between 'a-p'
+
+select * from EmployeeDetail where FirstName not like 'a-p'
+
+Ques 2- Get all employee detail from EmployeeDetail table whose "Gender" end with 'le'
+and contain 4 letters. The Underscore(_) Wildcard Character represents any single
+character.
+
+select * from EmployeeDetail where Gender like '%le' and Gender like '____'
+
+Ques 3- Get all employee detail from EmployeeDetail table whose "FirstName" start with 'A'
+and contain 5 letters.
+
+select * from EmployeeDetail where FirstName like 'A%' and FirstName like '_____'
+
+Ques 4- Get all employee detail from EmployeeDetail table whose "FirstName" containing
+'%'. ex:-"Vik%as".
+
+select * from EmployeeDetail where FirstName like '%'
+
+Ques 5- Get all unique "Department" from EmployeeDetail table.
+
+select DISTINCT Department from EmployeeDetail
+
+Ques 6- Get the highest "Salary" from EmployeeDetail table.
+
+select MAX(Salary) from EmployeeDetail
+
+Ques 7- Show "JoiningDate" in "dd mmm yyyy" format, ex- "15 Feb 2013"
+
